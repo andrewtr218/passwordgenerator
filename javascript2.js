@@ -51,7 +51,7 @@ function numGet() {
         }
     }
     if(specConf === false && numConf === false && lowConf === false && highConf === false){
-        alert("Please Refresh And Choose At Least 1 Valid Character Type")
+        alert("Please Choose At Least 1 Valid Character Type")
     }
 
     for(i=0 ; i < num ; i++){
