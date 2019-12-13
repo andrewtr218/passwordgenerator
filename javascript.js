@@ -8,7 +8,7 @@ var passWord = [];
 var passWord2 = "";
 
 
-var num = Number(prompt("how many characters do you want the password to be?(8-128)"));
+// var num = Number(prompt("how many characters do you want the password to be?(8-128)"));
 while( num < 8 || num > 128) {
 
          alert("Please select a valid number of characters");
@@ -16,14 +16,14 @@ while( num < 8 || num > 128) {
          num = Number(num);
      }
 
-var specConf = confirm("Do you want your password to include special characters?");
-// var numSpec = prompt("What is the minimum number of special characters you want your password to contain?");
-var numConf = confirm("Do you want your password to include numbers?");
-// var numNum = prompt("What is the minimum number of numbers you want your password to contain?");
-var lowConf = confirm("Do you want your password to include lowercase letters?");
-// var lowNum = prompt("What is the minimum number of numbers you want your password to contain?");
-var highConf = confirm("Do you want your password to include uppercase letters?");
-// var highNum = prompt("What is the minimum number of numbers you want your password to contain?");
+// var specConf = confirm("Do you want your password to include special characters?");
+// // var numSpec = prompt("What is the minimum number of special characters you want your password to contain?");
+// var numConf = confirm("Do you want your password to include numbers?");
+// // var numNum = prompt("What is the minimum number of numbers you want your password to contain?");
+// var lowConf = confirm("Do you want your password to include lowercase letters?");
+// // var lowNum = prompt("What is the minimum number of numbers you want your password to contain?");
+// var highConf = confirm("Do you want your password to include uppercase letters?");
+// // var highNum = prompt("What is the minimum number of numbers you want your password to contain?");
 
 function sumChars(specConf, numConf, lowConf, highConf, num){
    
