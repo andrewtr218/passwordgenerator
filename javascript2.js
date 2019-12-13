@@ -20,7 +20,6 @@ function numGet() {
         
 
     }
-   
     var specConf = document.getElementById("specConf").checked;
     var numConf = document.getElementById("numConf").checked;
     var lowConf = document.getElementById("lowConf").checked;
@@ -51,15 +50,18 @@ function numGet() {
         }
     }
     if(specConf === false && numConf === false && lowConf === false && highConf === false){
-        alert("Please Choose At Least 1 Valid Character Type")
+        alert("Please Choose At Least 1 Valid Character Type");
     }
-
-    for(i=0 ; i < num ; i++){
-        passWord.push(allowChars[(Math.floor(Math.random()*allowChars.length))]);
-    }
-    for(i=0 ; i < passWord.length ; i++){
-        passWord2 = passWord2 + passWord[i];
-    }
-    alert(passWord2);
-    return passWord2;
+    else{
+        for(i=0 ; i < num ; i++){
+            passWord.push(allowChars[(Math.floor(Math.random()*allowChars.length))]);
+        }
+        for(i=0 ; i < passWord.length ; i++){
+            passWord2 = passWord2 + passWord[i];
+        }
+        alert("Your Password: " + passWord2);
+            
+        }
+    
+    
  }
